@@ -1,8 +1,12 @@
-## How To Get Started
+//
+//  ViewController.m
+//  KRlogger
+//
+//  Created by Kalvar on 2014/1/10.
+//  Copyright (c) 2014年 Kalvar. All rights reserved.
+//
 
-KRLogger can fast save and log the string, try to think one, if you wanna async-logging some message in log when you're processing another working that you can use KRLogger to easy async-logging.
-
-``` objective-c
+#import "ViewController.h"
 #import "KRLogger.h"
 
 @interface ViewController ()
@@ -19,7 +23,7 @@ KRLogger can fast save and log the string, try to think one, if you wanna async-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_outTextView setEditable:NO];
+	[_outTextView setEditable:NO];
     _krLogger = [KRLogger sharedManager];
     [_krLogger registerReceivedLogsNotificationWithObserver:self selector:@selector(receivedChanges:)];
 }
@@ -70,12 +74,5 @@ KRLogger can fast save and log the string, try to think one, if you wanna async-
         _strings = nil;
     }
 }
-```
 
-## Version
-
-KRLogger now is V0.5 beta.
-
-## License
-
-KRLogger is available under the MIT license ( or Whatever you wanna do ). See the LICENSE file for more info.
+@end
