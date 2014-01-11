@@ -1,3 +1,7 @@
+## Screen Shot
+
+<img src="https://dl.dropbox.com/u/83663874/GitHubs/KRLogger-1.png" alt="KRLogger" title="KRLogger" style="margin: 20px;" class="center" /> &nbsp;
+
 ## How To Get Started
 
 KRLogger can fast save and log the string, try to think one, if you wanna async-logging some message in log when you're processing another working that you can use KRLogger to easy async-logging.
